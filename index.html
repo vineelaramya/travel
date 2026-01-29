@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Ideas & Inspiration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .destinations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .destination-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination-card h3 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .destination-card .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .destination-card p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .tip-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .tip-box h4 {
+            color: #856404;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .tip-box p {
+            color: #856404;
+        }
+
+        .bucket-list {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+
+        .bucket-list ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .bucket-list li {
+            padding: 15px;
+            margin: 10px 0;
+            background: white;
+            border-radius: 8px;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+
+        .bucket-list li:hover {
+            background: #fff5e6;
+            padding-left: 25px;
+        }
+
+        .bucket-list li:before {
+            content: "✈️ ";
+            margin-right: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .destinations {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Travel Ideas & Inspiration</h1>
+            <p>Discover amazing destinations and plan your next adventure</p>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                <h2>Popular Destinations</h2>
+                <div class="destinations">
+                    <div class="destination-card">
+                        <div class="icon">🗼</div>
+                        <h3>Paris, France</h3>
+                        <p>Experience the city of lights with its iconic Eiffel Tower, world-class museums, and charming cafés. Perfect for romance and culture enthusiasts.</p>
+                    </div>
+                    <div class="destination-card">
+                        <div class="icon">🏖️</div>
+                        <h3>Bali, Indonesia</h3>
+                        <p>Tropical paradise with stunning beaches, ancient temples, lush rice terraces, and incredible local cuisine. Ideal for relaxation and adventure.</p>
+                    </div>
+                    <div class="destination-card">
+                        <div class="icon">🗻</div>
+                        <h3>Tokyo, Japan</h3>
+                        <p>A perfect blend of traditional culture and cutting-edge technology. Explore historic temples, modern skyscrapers, and amazing food.</p>
+                    </div>
+                    <div class="destination-card">
+                        <div class="icon">🏔️</div>
+                        <h3>Swiss Alps</h3>
+                        <p>Breathtaking mountain landscapes, charming villages, and world-renowned skiing. A year-round destination for nature lovers.</p>
+                    </div>
+                    <div class="destination-card">
+                        <div class="icon">🏛️</div>
+                        <h3>Rome, Italy</h3>
+                        <p>Walk through history visiting the Colosseum, Vatican City, and ancient ruins while enjoying authentic Italian cuisine.</p>
+                    </div>
+                    <div class="destination-card">
+                        <div class="icon">🌴</div>
+                        <h3>Maldives</h3>
+                        <p>Crystal-clear waters, overwater bungalows, and pristine beaches. The ultimate destination for a luxury tropical getaway.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Travel Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-box">
+                        <h4>📱 Book in Advance</h4>
+                        <p>Save money by booking flights and accommodations 2-3 months ahead of your trip.</p>
+                    </div>
+                    <div class="tip-box">
+                        <h4>🎒 Pack Light</h4>
+                        <p>Travel with carry-on only when possible. It saves time and baggage fees.</p>
+                    </div>
+                    <div class="tip-box">
+                        <h4>💳 Inform Your Bank</h4>
+                        <p>Let your bank know about travel plans to avoid card blocks in foreign countries.</p>
+                    </div>
+                    <div class="tip-box">
+                        <h4>📸 Document Copies</h4>
+                        <p>Keep digital and physical copies of important documents like passport and tickets.</p>
+                    </div>
+                    <div class="tip-box">
+                        <h4>🗺️ Learn Basic Phrases</h4>
+                        <p>Learn hello, thank you, and please in the local language. Locals appreciate the effort.</p>
+                    </div>
+                    <div class="tip-box">
+                        <h4>⏰ Allow Extra Time</h4>
+                        <p>Arrive at airports 2-3 hours early for international flights to avoid stress.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Travel Bucket List Ideas</h2>
+                <div class="bucket-list">
+                    <ul>
+                        <li>Watch the Northern Lights in Iceland or Norway</li>
+                        <li>Safari adventure in the Serengeti, Tanzania</li>
+                        <li>Hike the Inca Trail to Machu Picchu, Peru</li>
+                        <li>Explore the Great Barrier Reef, Australia</li>
+                        <li>Visit the ancient city of Petra, Jordan</li>
+                        <li>Experience cherry blossom season in Japan</li>
+                        <li>Road trip along the Amalfi Coast, Italy</li>
+                        <li>Cruise through the Norwegian Fjords</li>
+                        <li>Dive in the Blue Hole, Belize</li>
+                        <li>Trek to Everest Base Camp, Nepal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Travel Ideas. Start planning your next adventure today! 🌏</p>
+        </footer>
+    </div>
+</body>
+</html>
